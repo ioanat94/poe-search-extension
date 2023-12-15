@@ -1,0 +1,11 @@
+{
+  "name": "PoE Search Extension",
+  "description": "Search for PoE items in the official wiki, trade site or poe.ninja",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {}
+}
