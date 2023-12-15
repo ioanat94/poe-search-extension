@@ -1,5 +1,5 @@
 # Path of Exile Search Extension
-Chrome extension to search for Path of Exile items on the PoE Wiki.
+Chrome extension to search for Path of Exile terms on the PoE Wiki.
 
 ## Usage
 - Clone or download repository
