@@ -2,6 +2,7 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const manifest = require("../public/manifest.json");
 module.exports = {
+  watch: true,
   mode: "production",
   entry: {
     background: path.resolve(__dirname, "..", "src", "background.ts"),
@@ -27,6 +28,17 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].json",
+            },
+          },
+        ],
+      },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].png",
             },
           },
         ],
